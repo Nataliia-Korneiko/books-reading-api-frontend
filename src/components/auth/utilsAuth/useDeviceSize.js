@@ -1,0 +1,24 @@
+import { device } from './deviceSize';
+import { useMediaQuery } from 'react-responsive';
+
+const useDeviceSizes = () => {
+  const isMobileDevice = useMediaQuery({
+    query: device.mobile,
+  });
+
+  const isTabletDevice = useMediaQuery({
+    query: device.tablet,
+  });
+
+  const isDesktopDevice = useMediaQuery({
+    query: device.desktop,
+  });
+
+  const isLargeTablet = useMediaQuery({
+    query: device.largeTablet,
+  });
+
+  return { isMobileDevice, isTabletDevice, isDesktopDevice, isLargeTablet };
+};
+
+export default useDeviceSizes;
