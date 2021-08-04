@@ -33,7 +33,7 @@ export default function Register() {
         >
           {({ touched, errors }) => (
             <Form className={css.registerForm}>
-              <a href='https://books-reading-api-backtend.herokuapp.com/api/auth/google'>
+              <a href='https://books-reading-api-backend.herokuapp.com/api/auth/google'>
                 <button className={css.Google} type='button'>
                   {language.registrationPage.google}
                 </button>

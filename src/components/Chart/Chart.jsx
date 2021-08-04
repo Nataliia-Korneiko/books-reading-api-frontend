@@ -35,6 +35,7 @@ const Chart = () => {
 
   const datesArray = getDatesArray();
   const completeDatesObj = {};
+  // eslint-disable-next-line array-callback-return
   datesArray.map(val => {
     completeDatesObj[val] = 0;
   });
